@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOR CANDIES</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet"href="./css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../primera_entrega_final_daniel_vega/css/layout.css"/>
+    
+</head>
+
+<body class="bodyIndex">
+   
+    <header class="headerIndex">
+        <p class="tituloBior"> BIOR CANDIES</p>
+        <div class="logo-nav-container">
+            <a href="#">
+                <img class="logoBior"src="images/logobior.png" alt="logo">
+            </a>
+            <nav class="navigation">
+               
+                <ul class="nav1">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="./pages/sobrenosotros.html">NOSOTROS</a></li>
+                    <li><a href="./pages/nuestros_productos.html">PRODUCTOS</a>  
+                        <ul>
+                            <li><a href="#">COCO</a></li>
+                            <li><a href="#">ARANDANOS</a></li>
+                            <li><a href="#">MARACUYA</a></li>
+                        </ul>  
+                    </li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/ingresoproveedores.html">PROVEEDORES</a></li>
+                    <li><a href="./pages/api.html">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="maindeIndex">
+        <button class="first">BIENVENIDO</button>
+        <button class="second">HOY ES UN GRAN DIA</button>
+        <button class="third">SOMOS POSITIVOS!</button>
+        <h1 class="tituloPrincipal">BIENVEVENIDOS A NUESTRA WEB</h1>
+        <img class="barraHome" src="./images/barra2.jpg" alt="logo">
+        <button class="button-report"><a href="./pages/contacto.html">CONTACTO</a></button>
+        <button class="button-submit"><a href="./pages/sobrenosotros.html">NOSOTROS</a></button>
+        <br>
+        <br>
+        <input type="text" id="edad">
+        <input type="button" value="Cargar Edad" onclick="VerEdad();">
+ 
+       
+        </header>
+    
+    
+      
+    
+        <div id="lista-barras" class="container">
+            <h1 id="encabezado" class="encabezado">Carrito de compras</h1>
+            <img src="./images/carrito_neon.webp" id="img-carrito" style="width:5%">
+
+            <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                      
+                            <h4>Barra de Arandanos</h4>
+                            
+                            <img src="./images/arandanos.jpg" style="width: 15%";>
+                            <p class="precio">  Precio por caja<span class="u-pull-right ">$350</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div> >
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                          
+                                <h4>Barra de Coco</h4>
+                                
+                                <img src="./images/coco2.jpg" style="width:15%";>
+                                <p class="precio"> Precio por caja <span class="u-pull-right ">$250</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                        <div class="four columns">
+                            <div class="card">
+                              
+                                    <h4>Barra de Maracuya</h4>
+                                    
+                                    <img src="./images/maracuya2.jpg"style="width:15%" >
+                                    <p class="precio">Precio por caja  <span class="u-pull-right ">$150</span></p>
+                                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                                </div>
+                            </div>
+                </div>
+              
+           
+            
+               
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                    <div id="carrito">
+                                            
+                                            <table id="lista-carrito" class="u-full-width">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Imagen</th>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+        
+                                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+
+            
+
+    <footer class="piedeIndex">
+        <img class="footerImagen" src="./images/footer.png" alt="logo">
+        <div class="footerFrase">
+            BE ENERGY BE MOTION BE NATURAL
+        </div>
+    </footer>
+    <script src="./js/variables.js" type="module"></script>
+    <!--Script API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+</body>
+</html>
